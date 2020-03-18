@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
 
 function App() {
+
+  const [color, setcolor] = useState("purple");
+  const [text, settext] = useState("purple")
+
+  const myStyles = {
+    color: "white",
+    backgroundColor: color,
+    padding: "10px",
+    fontFamily: "Arial"
+  }
+  const changeHandler = (e)=>{
+    setcolor(e.target.value);
+    settext(e.target.value);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container" style={myStyles}>
+  <p > color:{text}</p>
+        <input type="text"
+               
+               onChange={changeHandler}/>
+      </div>
     </div>
   );
 }

@@ -1,14 +1,6 @@
-
-.App {
-  text-align: center;
-  height: auto;
-  width:100%;
-  background-color: lightblue;
-}
 .card{
   background-color: coral;
-  position: fixed;
   height: 300px;
   width: 300px;
-  margin:300px;
+  margin: auto;
 }

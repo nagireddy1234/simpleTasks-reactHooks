@@ -1,6 +1,33 @@
-.card{
-  background-color: coral;
-  height: 300px;
-  width: 300px;
+.card,.card-container{
+  background-color:yellow;
+  height: 500px;
+  width: 500px;
   margin: auto;
+  position: relative;
+  padding: 20px;
+  box-shadow: lightgrey ;
+}
+
+.card-container button{
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 1em;
+  margin: auto;
+  position: fixed;
+  left: 45%;
+  top:50%;
+  outline: none;
+  border:none;
+  background-color: limegreen;
+}
+
+.quote{
+  color: blueviolet;
+  margin-bottom: 2em;
+  
+}
+.author{
+  color: #ccc;
 }

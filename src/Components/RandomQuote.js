@@ -17,7 +17,6 @@ export default function RandomQuote() {
 
    
    const randomGenerator = () => {
-
     const random = Math.floor(Math.random() * quotes.length)
      setQuote(quotes[random].quote);
      setauthor(quotes[random].author);
@@ -29,7 +28,7 @@ export default function RandomQuote() {
       <div className="card-container" >
         <h3 className="quote">{quote}</h3>
         <h1 className="author">{author}</h1>
-   <button type="button" className="button"onClick={randomGenerator}>random quote</button>
+      <button type="button" className="button"onClick={randomGenerator}><span style={{fontSize:"24px"}}>Random Quote</span></button>
       </div>
     </div>
       
